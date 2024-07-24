@@ -1,5 +1,7 @@
 package vehicle;
 
-public abstract class Vehicle {
-    public abstract void move();
+import interfaces.Movable;
+
+public abstract class Vehicle implements Movable {
+    public abstract String move();
 }

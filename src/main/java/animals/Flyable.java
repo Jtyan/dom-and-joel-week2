@@ -1,5 +1,8 @@
 package animals;
 
-public interface Flyable {
+import interfaces.Movable;
+
+public interface Flyable extends Movable {
     void fly();
+
 }

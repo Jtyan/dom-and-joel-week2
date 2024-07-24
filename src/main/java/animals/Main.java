@@ -35,6 +35,7 @@ public class Main {
     for (Environment<?> environment: environments) {
         System.out.println("What's going on in the " + environment.getClass().getSimpleName() + "?");
         environment.checkTraffic();
+        environment.checkSpeed();
         System.out.println("************************");
     }
 

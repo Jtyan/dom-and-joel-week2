@@ -1,7 +1,9 @@
 package vehicle;
+import interfaces.Movable;
 
-public interface Driveable {
-    default void drive() {
-        System.out.println(this.getClass().getSimpleName() + " is driven");
+public interface Driveable extends Movable {
+    default String drive() {
+        return this.getClass().getSimpleName() + " is driven" ;
     };
+
 }
