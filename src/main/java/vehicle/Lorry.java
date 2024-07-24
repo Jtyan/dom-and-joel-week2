@@ -1,9 +1,8 @@
 package vehicle;
 
-public class Car extends Vehicle implements Driveable{
+public class Lorry extends Vehicle implements Driveable{
     @Override
     public void move() {
         drive();
-    };
-
+    }
 }

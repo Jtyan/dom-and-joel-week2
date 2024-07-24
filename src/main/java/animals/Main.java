@@ -1,7 +1,6 @@
 package animals;
 
-import environment.Road;
-import environment.Sky;
+import environment.*;
 import vehicle.*;
 
 import java.util.List;
@@ -37,7 +36,7 @@ public class Main {
     sky.addTraffic(new Duck());
     sky.addTraffic(new Pigeon());
     sky.addTraffic(new Aeroplane());
-    sky.checkTraffic();
+
 
     System.out.println("\n");
 
@@ -45,6 +44,21 @@ public class Main {
     road.addTraffic(new Duck());
     road.addTraffic(new Pigeon());
     road.addTraffic(new Aeroplane());
-    road.checkTraffic();
+    road.addTraffic(new Car());
+    road.addTraffic(new Van());
+    road.addTraffic(new Lorry());
+
+
+    Water water = new Water();
+    water.addTraffic(new Duck());
+    water.addTraffic(new Fish());
+
+    List<Environment<?>> environments = List.of(sky, road, water);
+
+    for (Environment<?> environment: environments) {
+        environment.checkTraffic();
     }
+
+    }
+
 }
