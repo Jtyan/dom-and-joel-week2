@@ -9,7 +9,7 @@ public class Road extends Environment<Object>{
     public void checkTraffic() {
         for (Object obj : traffic){
             if (obj instanceof Vehicle && !(obj instanceof Flyable)) {
-                System.out.println(obj.getClass().getSimpleName() + " is driving");
+                ((Vehicle) obj).move();
             } else {
                 System.out.println(obj.getClass().getSimpleName() + " is on the road NOOOO!");
             }

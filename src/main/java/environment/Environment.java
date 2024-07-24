@@ -13,6 +13,4 @@ public abstract class Environment<T> {
         this.traffic.add(traffic);
     }
 
-    public abstract void checkVehicle();
-
 }
