@@ -30,7 +30,7 @@ public class Main {
     field.addTraffic(new Duck());
     field.addTraffic(new Deer());
 
-    List<Environment<?>> environments = List.of(sky, road, water, field);
+    List<Environment<?>> environments = List.of( road);
 
     for (Environment<?> environment: environments) {
         System.out.println("What's going on in the " + environment.getClass().getSimpleName() + "?");

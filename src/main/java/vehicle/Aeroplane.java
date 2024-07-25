@@ -16,7 +16,7 @@ public class Aeroplane extends Vehicle implements Flyable {
     }
 
     @Override
-    public String getSpeed() {
-        return speed + "mph";
+    public int getSpeed() {
+        return speed;
     }
 }

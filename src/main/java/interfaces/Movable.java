@@ -2,5 +2,8 @@ package interfaces;
 
 public interface Movable {
 
-     String getSpeed();
+     int getSpeed();
+
+     Integer[] getPosition();
+     int getDirection();
 }

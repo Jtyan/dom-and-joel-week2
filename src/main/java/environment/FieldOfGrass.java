@@ -4,6 +4,10 @@ import animals.Animal;
 import animals.Swimmable;
 
 public class FieldOfGrass extends Environment<Animal> {
+    public FieldOfGrass() {
+        maxSpeed = 50;
+    }
+
     @Override
     public void checkTraffic() {
         for (Animal a: traffic){

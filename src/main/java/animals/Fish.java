@@ -13,7 +13,7 @@ public class Fish extends Animal implements Swimmable{
     }
 
     @Override
-    public String getSpeed() {
-        return speed + "mph";
+    public int getSpeed() {
+        return speed;
     }
 }

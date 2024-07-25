@@ -8,7 +8,7 @@ import java.util.List;
 public abstract class Environment<T extends Movable> {
 
     protected List<T> traffic = new ArrayList<>();
-
+    protected int maxSpeed;
     public abstract void checkTraffic();
 
     public void addTraffic(T traffic) {

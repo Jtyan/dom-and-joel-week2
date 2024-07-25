@@ -1,14 +1,13 @@
 package vehicle;
 
 public class Van extends Vehicle implements Driveable{
-    int speed = 100;
+    int speed = 50;
     @Override
     public String move() {
-        drive();
-        return null;
+        return drive();
     }
 
-    public String getSpeed() {
-        return speed + "mph";
+    public int getSpeed() {
+        return speed;
     }
 }

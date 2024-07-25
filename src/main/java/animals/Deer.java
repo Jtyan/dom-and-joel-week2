@@ -8,7 +8,7 @@ public class Deer extends Animal implements Walkable{
     }
 
     @Override
-    public String getSpeed() {
-        return speed + "mph";
+    public int getSpeed() {
+        return speed;
     }
 }

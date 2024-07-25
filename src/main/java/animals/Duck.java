@@ -7,7 +7,7 @@ public class Duck extends Bird implements Swimmable{
         System.out.println("Quacking sounds");
     }
 
-    public String getSpeed() {
-        return speed + "mph";
+    public int getSpeed() {
+        return speed;
     }
 }
